@@ -147,6 +147,15 @@ public class CameraWrapper {
         }
     }
 
+    public void setFlash(boolean on) {
+        final Parameters parameters = mNativeCamera.getNativeCameraParameters();
+        if(on) {
+            parameters.setFlashMode(Parameters.FLASH_MODE_ON);
+        } else {
+            parameters.setFlashMode(Parameters.FLASH_MODE_OFF);
+        }
+    }
+
     @TargetApi(VERSION_CODES.HONEYCOMB)
     protected List<Size> getSupportedVideoSizes(int currentSdkInt) {
         Parameters params = mNativeCamera.getNativeCameraParameters();

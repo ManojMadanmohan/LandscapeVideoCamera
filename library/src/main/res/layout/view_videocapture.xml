@@ -43,6 +43,7 @@
         android:layout_centerVertical="true"
         android:layout_marginRight="-20dp"
         android:background="@drawable/states_btn_capture"
+        android:visibility="gone"
         android:clickable="true"/>
 
     <ImageView
@@ -52,7 +53,7 @@
         android:clickable="true"
         android:padding="8dp"
         android:src="@drawable/ic_change_camera_front"
-        android:visibility="visible"
+        android:visibility="gone"
         android:layout_marginRight="14dp"
         android:layout_marginBottom="28dp"
         android:layout_alignParentBottom="true"

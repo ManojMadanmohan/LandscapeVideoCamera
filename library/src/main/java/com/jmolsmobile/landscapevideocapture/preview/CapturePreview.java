@@ -50,6 +50,10 @@ public class CapturePreview implements SurfaceHolder.Callback {
 		// NOP
 	}
 
+	public void enableFlash(boolean flash) {
+		mCameraWrapper.setFlash(flash);
+	}
+
 	@Override
 	public void surfaceChanged(final SurfaceHolder holder, final int format, final int width, final int height) {
 		if (mPreviewRunning) {
